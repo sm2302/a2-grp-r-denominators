@@ -48,6 +48,7 @@ draw.chord.by.midpoint <- function(center.x, center.y, radius,
 
 
 #METHOD A (random endpoints)
+
 method.one <- function(center.x, center.y, radius){
   endpoint1.theta <- runif(1,0,2*pi);
   endpoint2.theta <- runif(1,0,2*pi);
@@ -62,6 +63,7 @@ method.one <- function(center.x, center.y, radius){
 
 
 #METHOD B (random radial points)
+
 method.two <- function(center.x, center.y, radius){
   radius.theta = runif(1,0,2*pi);
   d.from.center = runif(1,0,radius);
@@ -72,6 +74,7 @@ method.two <- function(center.x, center.y, radius){
 }
 
 #METHOD C (random midpoints)
+
 method.three <- function(center.x, center.y, radius){
   midpoint.x = center.x - radius;
   midpoint.y = center.y - radius;
