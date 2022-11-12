@@ -1,3 +1,4 @@
+#First you need to install this packages animation & plotrix
 install.packages("animation")
 install.packages("plotrix") # The plotrix package is intended to provide a method for getting many sort of specialized plots.
 
