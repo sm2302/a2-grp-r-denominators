@@ -10,13 +10,13 @@ line.length <- function(points){
   return(norm(points[1,]-points[2,], type="2"));
 }
 
-
+#two different colours to show the lines 
 draw.chord <- function(points, threshold){
-  color <- "blue";
+  color <- "green";
   chord.length <- line.length(points);
   longer <- chord.length > threshold;
   if(longer){
-    color <- "red";
+    color <- "blue";
   }
   lines(points[,1], points[,2], col=color);
   
