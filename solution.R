@@ -127,7 +127,7 @@ main <- function(){
     mtext(string);
   }
   
-  ani.options(interval=0.1);
+  ani.options(interval=0.1); 
   ms <- c(method.one, method.two, method.three);
   saveHTML({
     for(method in ms){
